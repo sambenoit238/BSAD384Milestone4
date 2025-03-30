@@ -18,6 +18,8 @@ The goal of this project is to develop a database system that enhances access to
 
 [Populate.SQL](https://github.com/sambenoit238/BSAD384Milestone4/blob/ca22c8ffb421416032feac6c31301f42817ef8d6/populate.sql)
 
+# Queries
+
 # Query 1
 
 Which participants are over the age of 35? How Many are there?
