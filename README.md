@@ -17,3 +17,53 @@ The goal of this project is to develop a database system that enhances access to
 [Create.SQL](https://github.com/sambenoit238/BSAD384Milestone4/blob/1bd5d94eae100e4f8e1ea7e3a0a3a85e2365002b/create.sql)
 
 [Populate.SQL](https://github.com/sambenoit238/BSAD384Milestone4/blob/ca22c8ffb421416032feac6c31301f42817ef8d6/populate.sql)
+
+# Query 1
+
+Which participants are over the age of 35? How Many are there?
+
+```sql
+
+Select PartID, Name, Age, Email, Location from Participant Where age > 35
+
+```
+
+# Query 2
+
+Find the Organization ID, Job Title, the Organization Name and the Average Job Salary
+
+```sql
+SELECT job.OrgID, job.Title, organization.Name, AVG(job.Salary) AS AvgSalary
+FROM job, organization 
+Where job.OrgID = organization.OrgID
+GROUP BY job.OrgID, job.Title, organization.Name;
+```
+
+# Query 3
+
+Write a Query that identifies the particpants with forms, the status of their form and when the form was dated.
+
+```sql
+SELECT participant.PartID, participant.Name, form.Date, form.status
+FROM participant, form
+where participant.PartID = form.PartID;
+```
+
+# Query 4
+
+Find all data from the organization_resource and organization tables
+
+```sql
+SELECT * 
+FROM organization_resource, organization
+where organization_resource.OrgID = organization.OrgID
+```
+
+# Query 5
+
+Find all the job titles and annual salary
+
+```sql
+SELECT Title, Salary, (Salary * 12) AS AnnualSalary
+FROM job
+```
