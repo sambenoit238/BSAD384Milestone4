@@ -1,0 +1,82 @@
+INSERT INTO participant VALUES(101, 'John Smith', 34, 'johnsmith123@gmail.com', 'Toronto Canada'); 
+INSERT INTO participant VALUES(102, 'Margo Tracy', 33, 'mtracy@hotmail.com', 'Antigonish Canada');
+INSERT INTO participant VALUES(103, 'Alex Johnson', 40, 'companyazy450@azy.com', 'London England');
+INSERT INTO participant VALUES(104, 'Mei Miller', 26, 'meimiller4060@icloud.com', 'Seoul South Korea');
+INSERT INTO participant VALUES(105, 'James Williams', 31, 'jmwilliams456@outlook.com', 'New York United States');
+INSERT INTO participant VALUES(106, 'Ethan Rodriguez', 29, 'theeman12345@icloud.com', 'Mexico City Mexico');
+INSERT INTO participant VALUES(107, 'Emily Martin', 45, 'notrelatedtostevemartin@gmail.com', 'Waco United States');
+INSERT INTO participant VALUES(108, 'Jack Cooper', 52, 'thecooper_family@yahoo.com', 'Berlin Germany');
+INSERT INTO participant VALUES(109, 'Maria Lee', 42, 'mariaandtomlee@live.com', 'Cape Town South Africa');
+INSERT INTO participant VALUES(110, 'Samira White', 28, 'white_s@buildingbridges.com', 'Oslo Norway');
+INSERT INTO participant VALUES(111, 'Peter OConnor', 28, 'oconnorcarsireland@outlook.com', 'Dublin Ireland');
+INSERT INTO participant VALUES(112, 'Murphy Williams', 34, 'thewilliamsfamilymail@gmail.com', 'West Haven United States');
+INSERT INTO participant VALUES(113, 'Kai Zhang', 33, 'kai.zhang01@yahoo.com', 'Beijing China');
+INSERT INTO participant VALUES(114, 'Liam Carter', 28, 'liam.carter42@outlook.com', 'Melbourne Australia');
+INSERT INTO participant VALUES(115, 'Ava Muller', 24, 'queenavamuller@icloud.com','Rome Italy');
+
+INSERT INTO organization VALUES('0011', 'National Centre of Truth and Reconciliation', 'NCTR@umanitoba.ca', 'Social Justice');
+INSERT INTO organization VALUES('0022', 'Food Banks Canada', 'info@foodbankscanada.ca', 'Non-Profit');
+INSERT INTO organization VALUES('0033', 'Kids Help Phone', 'info@kidshelpphone.ca', 'Youth Development');
+INSERT INTO organization VALUES('0044', 'Teach for Canada', 'info@teachforcanada.ca', 'Education');
+INSERT INTO organization VALUES('0055', 'Canadian Womens Foundation', 'info@canadianwomen.org', 'Gender Equality');
+INSERT INTO organization VALUES('0066', 'Council of Canadians with Disabilities', 'ccd@ccdonline.ca', 'Disability Rights');
+INSERT INTO organization VALUES('0077', 'Canada Without Poverty', 'info@cwp-csp.ca', 'Economic Equality');
+INSERT INTO organization VALUES('0088', 'Healthcare Excellence Canada', 'info@hec-esc.ca', 'Healthcare Access');
+
+INSERT INTO job VALUES (10001, 'Project Manager', 7500.00, '0077');
+INSERT INTO job VALUES(10002, 'Community Outreach Coordinator', 5000.00, '0011');
+INSERT INTO job VALUES(10003, 'Financial Analyst', 6200.00, '0088');
+INSERT INTO job VALUES(10004, 'Public Relations Specialist', 4500.00, '0055');
+INSERT INTO job VALUES(10005, 'Social Worker', 5400.00, '0033');
+INSERT INTO job VALUES(10006, 'Policy Advisor', 6800.00, '0066');
+INSERT INTO job VALUES(10007, 'Grant Writer', 4800.00, '0044');
+INSERT INTO job VALUES(10008, 'Legal Consultant', 9000.00, '0022');
+
+INSERT INTO form VALUES(001, '2024-03-20', 'Pending', 10001, 102);
+INSERT INTO form VALUES(020, '2024-10-22', 'Approved', 10002, 104);
+INSERT INTO form VALUES(030, '2024-03-23', 'Denied', 10003, 110);
+INSERT INTO form VALUES(040, '2024-04-24', 'Pending', 10004, 101);
+INSERT INTO form VALUES(050, '2024-02-01', 'Denied', 10005, 103);
+INSERT INTO form VALUES(060, '2024-09-03', 'Approved', 10006, 106);
+INSERT INTO form VALUES(070, '2024-05-29', 'Approved', 10007, 115);
+INSERT INTO form VALUES(080, '2025-02-28', 'Pending', 10008, 113);
+INSERT INTO form VALUES(090, '2025-01-02', 'Denied', 10001, 108);
+INSERT INTO form VALUES(010, '2025-02-05', 'Pending', 10002, 111);
+
+INSERT INTO organization_resource VALUES(99, 'Food', 'Non-perishable food items for emergency distribution', 1, '0022');
+INSERT INTO organization_resource VALUES(98, 'Educational Materials', 'Books, pens, and other learning materials for children in marginalized communities', 1, '0044');
+INSERT INTO organization_resource VALUES(97, 'Medical Equipment', 'Basic medical supplies for underserved areas', 1, '0088');
+INSERT INTO organization_resource VALUES(96, 'Clothing', 'Second-hand clothing for refugees and displaced persons', 1, '0077');
+INSERT INTO organization_resource VALUES(95, 'Legal Aid Services', 'Free legal aid for individuals facing discrimination', 1, '0055');
+INSERT INTO organization_resource VALUES(94, 'Technology', 'Laptops and tablets for low-income students', 1, '0044');
+INSERT INTO organization_resource VALUES(93, 'Water', 'Access to clean water for remote communities', 0, '0011');
+INSERT INTO organization_resource VALUES(92, 'Helpline', 'Provides confidential, free, 24/7 support for kids and youth in crisis, offering guidance on mental health, bullying, relationships, and more', 1, '0033');
+INSERT INTO organization_resource VALUES(91, 'Advocacy', 'Provides guidance, resources, and support to individuals with disabilities and their families to advocate for their rights and access to services, including accessibility, education, and employment', 1, '0066');
+
+INSERT INTO equality_action VALUES(1000, '2024-03-21', 'Pending', 102, 99);
+INSERT INTO equality_action VALUES(1001, '2024-05-10', 'Approved', 104, 98);
+INSERT INTO equality_action VALUES(1002, '2024-06-18', 'Denied', 110, 97);
+INSERT INTO equality_action VALUES(1003, '2024-07-15', 'Pending', 101, 96);
+INSERT INTO equality_action VALUES(1004, '2024-08-25', 'Approved', 103, 95);
+INSERT INTO equality_action VALUES(1005, '2024-11-10', 'Denied', 106, 94);
+INSERT INTO equality_action VALUES(1006, '2025-01-25', 'Pending', 115, 93);
+INSERT INTO equality_action VALUES(1007, '2025-03-10','Approved', 113, 92);
+INSERT INTO equality_action VALUES(1008, '2025-04-18', 'Denied', 108, 91);
+INSERT INTO equality_action VALUES(1009, '2025-05-05', 'Pending', 111, 94);
+
+INSERT INTO education_program VALUES(20001, 'Residential School and Reconciliation', 'This program educates on the history and impact of Canada''s residential school system. It promotes healing, understanding, and reconciliation through workshops and resources.', '0011');
+INSERT INTO education_program VALUES(20002, 'Community Food Access and Support Initiative', 'Provides essential food resources to individuals and families facing food insecurity across Canada. It connects communities with local food banks, ensuring access to nutritious meals and support services.', '0022');
+INSERT INTO education_program VALUES(20003, 'Mental Health Support and Counselling for Youth', 'This program offers confidential, accessible mental health support to young people across Canada. Through phone, text, and online services, it provides guidance, counseling, and resources for emotional well-being.', '0033');
+INSERT INTO education_program VALUES(20004, 'Teaching Excellence in Northern Communities', 'Trains and supports educators to teach in remote and underserved northern communities. It focuses on culturally responsive teaching and building strong connections with students and families.', '0044');
+INSERT INTO education_program VALUES(20005, 'Empowerment Through Education for Girls and Women', 'Provides educational opportunities to young girls and women, promoting leadership and independence. It supports access to skills training and mentorship to build confidence and economic security.', '0055');
+INSERT INTO education_program VALUES(20006, 'Inclusive Education for Students with Disabilities', 'Advocates for accessible education and resources for students with disabilities. It provides support for schools to create inclusive environments that cater to diverse learning needs.', '0066');
+INSERT INTO education_program VALUES(20007, 'Poverty Awareness and Advocacy Education', 'Educates individuals and communities about the root causes of poverty in Canada. It focuses on raising awareness and empowering participants to advocate for systemic change to eliminate poverty.', '0077');
+INSERT INTO education_program VALUES(20008, 'Improving Healthcare Systems through Education', 'Trains healthcare professionals on best practices for enhancing patient care and system efficiency. It aims to foster continuous improvement in healthcare delivery across Canada.', '0088');
+
+INSERT INTO feedback VALUES(2000, 'As a survivor I found this site to be very helpful in understanding the true horrors that all of us experienced in these hellholes of cultural genocide. Thank you', 5, '0011', 101);
+INSERT INTO feedback VALUES(2001, 'The medical supplies were insufficient, and the quality was poor.', 1, '0088', 102);
+INSERT INTO feedback VALUES(2002, 'I was made aware that your organization started The Signal For Help and it saved an American girls life!!! Thank you!!', 5, '0055', 103);
+INSERT INTO feedback VALUES(2003, 'My son in Canada says it gives stuff he does not like.', 2, '0022', 113);
+INSERT INTO feedback VALUES(2004, 'The shelter was clean, but it would be great to have more room.', 4, '0077', 106);
+INSERT INTO feedback VALUES(2005, 'When I lived in Canada as a kid, this organization saved me when my parents were having a rough patch and I had no one to turn to.', 4, '0033', 115);
+INSERT INTO feedback VALUES(2006, 'Their telephone line was always busy even in the early mornings! Something does not add up!', 2, '0066', 107);
